@@ -13,6 +13,16 @@
     
     <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/styles.css">
+   <!-- Mapa -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <script src="/js/index.js"></script>
+
+
+    
 
 </head>
 <body>
@@ -71,21 +81,71 @@
 
     <H1 style="color: black; text-align: center; padding-top: 1em;"> CONTACTO</H1>
 
-    <div class="row no-space">
-        <div class="col-6">
-            <div class="uppercase">Col-6</div>
-        </div>
-        <div class="col-6">
-            <div class="uppercase">Col-6</div>
-            <H1>Vinos Salazar</H1>
-            <p></p>
-        </div>
+    
+
+
+
+    <div class="row row--no-wrap">
+        <div class="col-10"><div class="uppercase"></div>
+    
+ <!--The div element for the map -->
+ <div id="map"></div>
+
+    
+    
     </div>
+        <div class="col-10"><div class="uppercase"></div><H1 style="color: black; text-align: right;">Vinos Salazar</H1>
+    <p style="color: grey; text-align: right;">Lomas taurina</p>
+    <p style="color: grey; text-align: right;">Calle Miura</p>
+    <p style="color: grey; text-align: right;">Tijuana,Baja California</p>
+    <p style="color: grey; text-align: right;">Mexico</p>
+    <p style="color: grey; text-align: right;">Telefono:664 4545 4545</p>
+    <p style="color: grey; text-align: right;">Fax:664 4545 4545</p>
+    
+    </div>
+        
+    </div>
+
+    <footer style="background-color: #6D2A19;">
+<p style="color: cornsilk; text-align: center;">Copyright 2020 Partida Salazar Ruben</p>
+    </footer>
+
 
 <!-- Scripts -->
 <script src="js/lightbox-plus-jquery.min.js"></script>
 <script src="js/lightbox.min.js"></script>
 <script src="js/app.js"></script>
+
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <style type="text/css">
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 500px;
+        /* The height is 400 pixels */
+        width: 800px;
+        /* The width is the width of the web page */
+      }
+    </style>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: -25.344, lng: 131.036 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
 
 </body>
 </html>
