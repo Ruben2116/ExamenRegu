@@ -10,7 +10,7 @@ body{
 }
 
 .gallery-container{
-    width: 80%;
+    width: 70%;
     margin:100px auto;
     padding-right: 1em;
     display: grid;
@@ -32,4 +32,23 @@ body{
 }
 .gallery-container .gallery-card a > img:hover{
     /*transform: scale(1.5) rotate(30deg);*/
+}
+.fondodevinos{
+    height: 500px;
+    width: 100% ;
+    background-image: url('https://saboryestilo.com.mx/wp-content/uploads/2019/03/tipos-de-vinos-1200x675.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:bottom;
+    background-position-y: -200px;
+   
+
+}
+.TextoInici{
+    color:#6D2A19;
+    font-weight: bold;
+    font-family:  Montserrat;
+    padding-left: 30em;
+    padding-top: 8em;
+
 }
