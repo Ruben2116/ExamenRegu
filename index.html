@@ -9,11 +9,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vinos Salazar</title>
 
-    <!-- Styles -->
+   
     
     <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/styles.css">
-   <!-- Mapa -->
+   
     <script
       src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
       defer
@@ -88,7 +88,7 @@
     <div class="row row--no-wrap">
         <div class="col-10"><div class="uppercase"></div>
     
- <!--The div element for the map -->
+
  <div id="map"></div>
 
     
@@ -111,7 +111,7 @@
     </footer>
 
 
-<!-- Scripts -->
+
 <script src="js/lightbox-plus-jquery.min.js"></script>
 <script src="js/lightbox.min.js"></script>
 <script src="js/app.js"></script>
@@ -121,25 +121,25 @@
       defer
     ></script>
     <style type="text/css">
-      /* Set the size of the div element that contains the map */
+     
       #map {
         height: 500px;
-        /* The height is 400 pixels */
+      
         width: 800px;
-        /* The width is the width of the web page */
+      
       }
     </style>
     <script>
-      // Initialize and add the map
+      
       function initMap() {
-        // The location of Uluru
+        
         const uluru = { lat: -25.344, lng: 131.036 };
-        // The map, centered at Uluru
+        
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 4,
           center: uluru,
         });
-        // The marker, positioned at Uluru
+        
         const marker = new google.maps.Marker({
           position: uluru,
           map: map,
